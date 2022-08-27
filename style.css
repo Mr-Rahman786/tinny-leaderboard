@@ -1,13 +1,117 @@
-/* Our-clien */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&display=swap');
+
+body{
+    font-family: 'Aboreto', cursive;
+    background-color: #F3F1FF;
+}
+/* Our-client */
+main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-1{
+    background-color: rgb(1, 7, 7);
+    color: white;
+    width: 70%;
+    height: 1300px;
+    padding: 30px;
+}
+.first-section-title{
+    color: orangered;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
 .players{
     display: grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
 .player img{
-    width: 35%;
-    border-radius: 10px;
+        width: 150px;
+        height: 120px;
+        border-radius: 20px;
 }
 .player{
     display: flex;
     align-items: center;
 }
+.player-name{
+    margin-left: 20px;
+}
+hr{
+    margin-top: 10%;
+}
+--------------
+/* first-section-finished */
+-----------------
+
+/* second-section-start */
+
+.top-catagories{
+    margin-top: 5%;
+}
+.catagories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10%;
+    grid-column-gap: 10px;
+}
+.catgory{
+    display: flex;
+}
+.catgory .thumnail img{
+    width: 250px;
+    height: 300px;
+}
+.thumbnail-blog{
+    margin-left: 20px;
+}
+.blog-para{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 20px;
+}
+/* first-conatainer-finished */
+.container-2 {
+    background-color: rgb(224, 117, 197);
+    color: white;
+    width: 70%;
+    margin-top: 30px;
+    /* height: 1300px; */
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------@media-----------------------------------
+@media screen and  (max-width:576px){
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .catagories{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
