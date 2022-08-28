@@ -1,11 +1,40 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body{
-    font-family: 'Aboreto', cursive;
+    font-family: 'Open Sans', sans-serif;
     background-color: #F3F1FF;
-    /* margin: 0; */
+    margin: 0;
+}
+
+/* navigation-menu */
+.fa-apple-whole{
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+    left: 100px;
+
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+.navigation{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+.fa-bars{
+    position: relative;
+    left: 400px;
+    font-size: 1.7rem;
+    /* top: 5px; */
 }
 /* Our-client */
 main{
@@ -13,7 +42,16 @@ main{
     align-items: center;
     flex-direction: column;
 }
+.another-section{
+        position: relative;
+        top: 100px;
+        font-size: 2rem;
+}
+.busines {
+    font-family: 'Pacifico', cursive;
+}
 .container-1{
+    margin-top: 5%;
     background-color: rgb(1, 7, 7);
     color: white;
     margin-bottom: 5px;
@@ -126,7 +164,34 @@ a{
     padding: 5px 20px;
     border-radius: 20px;
 }
-
+.button{
+    padding: 10px 60px;
+    margin-top: 10px;
+    position: relative;
+    left: 50px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: purple;
+    border: none;
+    color: white;
+    /* opacity: 0.5; */
+    transition: 0.5;
+    /* width: 100px; */
+    
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: orangered;
+    height: 100px;
+}
+.fa-copyright{
+    color: white;
+}
 
 
 
@@ -146,9 +211,20 @@ a{
     body{
         margin: 0;
     }
+    .fa-apple-whole {
+        font-size: 3rem;
+        position: relative;
+        top: 10px;
+        left: 30px;
+        color: dimgrey;
+        }
     .container-1{
         width: 80%;
     }
+    .another-section{
+        display: none;
+    }
+    
     .container-2{
         width: 80%;
     }
@@ -173,5 +249,41 @@ a{
     }
     .project .banners img {
         width: 100%;
+    }
+    .project{
+        margin-top: 30px;
+    }
+    .navbar{
+        display: none;
+    }
+    .fa-bars {
+        position: relative;
+        left: 150px;
+        /* top: 5px; */
+        bottom: 25px;
+        font-size: 1.5rem;
+        color: white;
+        border: 2px solid crimson;
+        border-radius: 10px;
+        padding: 7px 15px;
+        /* border-width: 10px */
+
+    }
+    .icon-flex{
+        margin-left: 10%;
+    }
+    #icon-paragraph{
+        margin-left: 30px;
+    }
+    nav{
+        height: 80px;
+    }
+    .button{
+        position: relative;
+        right: 30px;
+    }
+    footer{
+        font-size: 10px;
+        height: 70px;
     }
 }
