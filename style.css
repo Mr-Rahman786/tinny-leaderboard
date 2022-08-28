@@ -5,6 +5,7 @@
 body{
     font-family: 'Aboreto', cursive;
     background-color: #F3F1FF;
+    /* margin: 0; */
 }
 /* Our-client */
 main{
@@ -15,9 +16,14 @@ main{
 .container-1{
     background-color: rgb(1, 7, 7);
     color: white;
-    width: 70%;
-    height: 1300px;
+    margin-bottom: 5px;
+    /* margin-left: 5%; */
+    width: 80%;
+    /* height: 1300px; */
     padding: 30px;
+}
+.first-section-title{
+    margin-bottom: 15px;
 }
 .first-section-title{
     color: orangered;
@@ -44,7 +50,7 @@ main{
     margin-left: 20px;
 }
 hr{
-    margin-top: 10%;
+    margin-top: 30px;
 }
 --------------
 /* first-section-finished */
@@ -81,12 +87,44 @@ a{
 }
 /* first-conatainer-finished */
 .container-2 {
-    background-color: rgb(224, 117, 197);
+    background-color: rgb(21, 32, 37);
     color: white;
-    width: 70%;
-    margin-top: 30px;
+    width: 80%;
+    margin-top: 15%;
     /* height: 1300px; */
     padding: 30px;
+}
+/* 
+====================last section============
+ */
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.project .banners img{
+    width: 80%;
+    /* height: 50%; */
+    box-shadow: 10px 10px 30px  rgb(142, 82, 94);
+    border-radius: 10px;
+}
+.icon-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 20px;
+}
+.fa-star{
+    color: rgb(207, 173, 0);
+    font-size: 10px;
+}
+.fa-star-half-stroke{
+    color:grey;
+}
+#icon{
+    background-color: tomato;
+    padding: 5px 20px;
+    border-radius: 20px;
 }
 
 
@@ -104,14 +142,36 @@ a{
 
 
 
-
-
-/* --------------------------------@media-----------------------------------
 @media screen and  (max-width:576px){
+    body{
+        margin: 0;
+    }
+    .container-1{
+        width: 80%;
+    }
+    .container-2{
+        width: 80%;
+    }
     .players{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .catagories{
         grid-template-columns: repeat(1, 1fr);
     }
-} */
+    .catgory{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project .banners img {
+        width: 100%;
+    }
+}
